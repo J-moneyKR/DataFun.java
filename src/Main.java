@@ -55,7 +55,7 @@ public class Main {
                 System.out.println("This number is NOT a noble gas");
         }
                 Scanner scanaylized = new Scanner(System.in);
-                System.out.println("You got to give me your favroite character");
+                System.out.println("You got to give me your favorite character");
             char charactrer = scanaylized.next().charAt(0);
             if (Character.isUpperCase(charactrer)) { // from interner is uppercase
                 System.out.println("This number is a uppercase letter");
