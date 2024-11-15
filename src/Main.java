@@ -1,3 +1,7 @@
+// Jack Fryer
+// Friday, November 15, 2024
+// This program's function is to serve as a demonstration of my skills related to java if else and switch statements
+// Along with the ability to think logically.
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
