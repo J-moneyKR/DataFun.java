@@ -7,7 +7,7 @@ public class Main {
         Scanner scanaylize = new Scanner(System.in);
         Integer favint = scanaylize.nextInt();
         if (favint >= 0){
-            System.out.println("The number is postive or cero");
+            System.out.println("The number is postive or zero");
 
         } else {
             System.out.println("This intger is negative ");
@@ -19,13 +19,13 @@ public class Main {
         } else if (favint > 10) {
             System.out.println("This number is bigger than 10");
         } else {
-            System.out.println("This number is too small tye shi ");
+            System.out.println("This number is too small");
         }
         //This part got looked on the internet tye shi
         if (favint % 2 == 0 ){
-            System.out.println("This number even tye shi");
+            System.out.println("This number is even");
         } else {
-            System.out.println("This number odd tye shi");
+            System.out.println("This number is odd");
         }
         // Most of this is not my own work and I had to use a torutiral to find out what a swithc is
         switch (favint) {
@@ -48,7 +48,7 @@ public class Main {
                 System.out.println("This number is a radon ");
                 break;
             default:
-                System.out.println("This number is NOT a noble gas tye shi");
+                System.out.println("This number is NOT a noble gas");
         }
                 Scanner scanaylized = new Scanner(System.in);
                 System.out.println("You got to give me your favroite character");
