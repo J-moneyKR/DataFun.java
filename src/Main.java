@@ -54,10 +54,10 @@ public class Main {
                 System.out.println("You got to give me your favroite character");
             char charactrer = scanaylized.next().charAt(0);
             if (Character.isUpperCase(charactrer)) { // from interner is uppercase
-                System.out.println("This number is a uppercase character");
+                System.out.println("This number is a uppercase letter");
             }
             else if (Character.isLowerCase(charactrer)) { //from internet is lowercase
-                System.out.println("This is a lowercase number");
+                System.out.println("This is a lowercase letter");
             }
             //is digit was looked up on the interent
             else if (Character.isDigit(charactrer)) {
@@ -76,14 +76,37 @@ public class Main {
             }
             //This part was looked up form the internet by casting it
             int valueofChar = (int) charactrer;
-            System.out.println("The ascii and or unicode value which is from the int of all of coding is " + valueofChar);
+            int valueUpper = valueofChar - 64;
+                int valueLower = valueofChar - 96;
+            System.out.println("The ascii and or unicode value is " + valueofChar);
             if ((valueofChar >= 65 && valueofChar <= 90) || (valueofChar >= 97 && valueofChar <= 122)){
-                int value = (int) charactrer;
-                // switch statment with logic for each one inside
+                if (valueofChar >= 64 && valueofChar <= 90)
+                    if (valueLower == 1){
+                        System.out.print("It is the " + valueUpper + "st letter of the alphabet");
+                    }else if (valueLower == 2){
+                        System.out.print("It is the " + valueUpper +"nd letter of the alphabet");
+                    }else if (valueLower == 3){
+                        System.out.print("It is the " + valueUpper +"rd letter of the alphabet");
+                    }else{
+                        System.out.print("It is the " + valueUpper + "th letter of the alphabet");
+                    }    
+                if (valueofChar >= 96 && valueofChar <= 122)
+                    if (valueLower == 1){
+                        System.out.print("It is the " + valueLower + "st letter of the alphabet");
+                    }else if (valueLower == 2){
+                        System.out.print("It is the " + valueLower +"nd letter of the alphabet");
+                    }else if (valueLower == 3){
+                        System.out.print("It is the " + valueLower +"rd letter of the alphabet");
+                    }else{
+                        System.out.print("It is the " + valueLower + "th letter of the alphabet");
+                    }        
+                        
+                
+                
+
             } else {
                 System.out.println("This is not a letter in the english alphabet");
 
             }
 
-    }
     }
